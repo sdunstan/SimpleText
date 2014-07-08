@@ -10,6 +10,42 @@
 
 @implementation AttributedStringBuilder
 
+-(AttributedStringBuilder*) withFontFamily:(NSString*)fontFamily
+{
+    return self;
+}
+
+-(AttributedStringBuilder*) center
+{
+    return self;
+}
+
+-(AttributedStringBuilder*) left
+{
+    return self;
+}
+
+-(AttributedStringBuilder*) right
+{
+    return self;
+}
+
+-(AttributedStringBuilder*) bold
+{
+    return self;
+}
+
+-(AttributedStringBuilder*) underline
+{
+    return self;
+}
+
+-(AttributedStringBuilder*) text:(NSString*)fontFamily
+{
+    return self;
+}
+
+
 -(NSAttributedString*)build
 {
     return nil;

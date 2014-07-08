@@ -10,6 +10,14 @@
 
 @interface AttributedStringBuilder : NSObject
 
+-(AttributedStringBuilder*) withFontFamily:(NSString*)fontFamily;
+-(AttributedStringBuilder*) center;
+-(AttributedStringBuilder*) left;
+-(AttributedStringBuilder*) right;
+-(AttributedStringBuilder*) bold;
+-(AttributedStringBuilder*) underline;
+-(AttributedStringBuilder*) text:(NSString*)fontFamily;
+
 -(NSAttributedString*)build;
 
 @end

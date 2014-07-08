@@ -7,11 +7,12 @@ Sample usage:
 
     NSAttributedText *doc =
       [NSAttributedText attributedStringWithBlock:^(AttributedStringBuilder *builder) {
-        builder.font = [UIFont fontWithName:@"Helvetica-Bold" size:12.0];
-        builder.centered.bold.text = @"A Time For Clowns\n";
-        builder.centered.text = @"A Play in Two Acts\n\n";
-        builder.centered.text = @"GEORGE\n";
-        builder.text = @"I love you, Orange.\n";
-        builder.centered.text = @"ORANGE\n";
-        builder.text = @"I love you too, George.\n";
+        [builder withfontFamily: @"Helvetica"];
+        [builder center [bold [underline [text: @"A Time for Clowns\n"]]]];
+        [builder center                  [text: @"A Play in Two Acts\n\n"]];
+
+        [builder center                  [text: @"GEORGE\n"]];
+        [builder                          text: @"I love you, Orange.\n"];
+        [builder center                  [text: @"ORANGE\n"]];
+        [builder                          text: @"I love you too, George.\n"];
       }];

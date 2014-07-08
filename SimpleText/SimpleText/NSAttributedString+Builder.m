@@ -12,9 +12,13 @@
 
 + (instancetype) attributedStringWithBlock:(void (^) (AttributedStringBuilder *builder))callbackBlock
 {
+    // Create a builder to use in the provided callback.
     AttributedStringBuilder *builder = [[AttributedStringBuilder alloc] init];
     
+    // Execute the callback
     callbackBlock(builder);
+    
+    // return the results of the builder!
     return [builder build];
 }
 

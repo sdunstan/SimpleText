@@ -1,5 +1,5 @@
 //
-//  SimpleText.h
+//  AttributedStringBuilder.h
 //  SimpleText
 //
 //  Created by Stephen Dunstan on 7/7/14.
@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SimpleText : NSObject
+@interface AttributedStringBuilder : NSObject
+
+-(NSAttributedString*)build;
 
 @end

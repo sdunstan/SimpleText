@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA70EC02196B93F300F6F3E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
+		AA70EC07196B93F300F6F3E4 /* SimpleText.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA70EC06196B93F300F6F3E4 /* SimpleText.h */; };
+		AA70EC09196B93F300F6F3E4 /* SimpleText.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70EC08196B93F300F6F3E4 /* SimpleText.m */; };
+		AA70EC10196B93F300F6F3E4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC0F196B93F300F6F3E4 /* XCTest.framework */; };
+		AA70EC11196B93F300F6F3E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
+		AA70EC13196B93F300F6F3E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC12196B93F300F6F3E4 /* UIKit.framework */; };
+		AA70EC16196B93F300F6F3E4 /* libSimpleText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EBFE196B93F300F6F3E4 /* libSimpleText.a */; };
+		AA70EC1C196B93F300F6F3E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA70EC1A196B93F300F6F3E4 /* InfoPlist.strings */; };
+		AA70EC1E196B93F300F6F3E4 /* SimpleTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70EC1D196B93F300F6F3E4 /* SimpleTextTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA70EC14196B93F300F6F3E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA70EBF6196B93F300F6F3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA70EBFD196B93F300F6F3E4;
+			remoteInfo = SimpleText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA70EBFC196B93F300F6F3E4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AA70EC07196B93F300F6F3E4 /* SimpleText.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA70EBFE196B93F300F6F3E4 /* libSimpleText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimpleText.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA70EC01196B93F300F6F3E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA70EC05196B93F300F6F3E4 /* SimpleText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleText-Prefix.pch"; sourceTree = "<group>"; };
+		AA70EC06196B93F300F6F3E4 /* SimpleText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleText.h; sourceTree = "<group>"; };
+		AA70EC08196B93F300F6F3E4 /* SimpleText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleText.m; sourceTree = "<group>"; };
+		AA70EC0E196B93F300F6F3E4 /* SimpleTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA70EC0F196B93F300F6F3E4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AA70EC12196B93F300F6F3E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AA70EC19196B93F300F6F3E4 /* SimpleTextTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTextTests-Info.plist"; sourceTree = "<group>"; };
+		AA70EC1B196B93F300F6F3E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA70EC1D196B93F300F6F3E4 /* SimpleTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTextTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA70EBFB196B93F300F6F3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA70EC02196B93F300F6F3E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA70EC0B196B93F300F6F3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA70EC16196B93F300F6F3E4 /* libSimpleText.a in Frameworks */,
+				AA70EC10196B93F300F6F3E4 /* XCTest.framework in Frameworks */,
+				AA70EC13196B93F300F6F3E4 /* UIKit.framework in Frameworks */,
+				AA70EC11196B93F300F6F3E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA70EBF5196B93F300F6F3E4 = {
+			isa = PBXGroup;
+			children = (
+				AA70EC03196B93F300F6F3E4 /* SimpleText */,
+				AA70EC17196B93F300F6F3E4 /* SimpleTextTests */,
+				AA70EC00196B93F300F6F3E4 /* Frameworks */,
+				AA70EBFF196B93F300F6F3E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA70EBFF196B93F300F6F3E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA70EBFE196B93F300F6F3E4 /* libSimpleText.a */,
+				AA70EC0E196B93F300F6F3E4 /* SimpleTextTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA70EC00196B93F300F6F3E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA70EC01196B93F300F6F3E4 /* Foundation.framework */,
+				AA70EC0F196B93F300F6F3E4 /* XCTest.framework */,
+				AA70EC12196B93F300F6F3E4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA70EC03196B93F300F6F3E4 /* SimpleText */ = {
+			isa = PBXGroup;
+			children = (
+				AA70EC06196B93F300F6F3E4 /* SimpleText.h */,
+				AA70EC08196B93F300F6F3E4 /* SimpleText.m */,
+				AA70EC04196B93F300F6F3E4 /* Supporting Files */,
+			);
+			path = SimpleText;
+			sourceTree = "<group>";
+		};
+		AA70EC04196B93F300F6F3E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA70EC05196B93F300F6F3E4 /* SimpleText-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA70EC17196B93F300F6F3E4 /* SimpleTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA70EC1D196B93F300F6F3E4 /* SimpleTextTests.m */,
+				AA70EC18196B93F300F6F3E4 /* Supporting Files */,
+			);
+			path = SimpleTextTests;
+			sourceTree = "<group>";
+		};
+		AA70EC18196B93F300F6F3E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA70EC19196B93F300F6F3E4 /* SimpleTextTests-Info.plist */,
+				AA70EC1A196B93F300F6F3E4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA70EBFD196B93F300F6F3E4 /* SimpleText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA70EC21196B93F300F6F3E4 /* Build configuration list for PBXNativeTarget "SimpleText" */;
+			buildPhases = (
+				AA70EBFA196B93F300F6F3E4 /* Sources */,
+				AA70EBFB196B93F300F6F3E4 /* Frameworks */,
+				AA70EBFC196B93F300F6F3E4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleText;
+			productName = SimpleText;
+			productReference = AA70EBFE196B93F300F6F3E4 /* libSimpleText.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AA70EC0D196B93F300F6F3E4 /* SimpleTextTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA70EC24196B93F300F6F3E4 /* Build configuration list for PBXNativeTarget "SimpleTextTests" */;
+			buildPhases = (
+				AA70EC0A196B93F300F6F3E4 /* Sources */,
+				AA70EC0B196B93F300F6F3E4 /* Frameworks */,
+				AA70EC0C196B93F300F6F3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA70EC15196B93F300F6F3E4 /* PBXTargetDependency */,
+			);
+			name = SimpleTextTests;
+			productName = SimpleTextTests;
+			productReference = AA70EC0E196B93F300F6F3E4 /* SimpleTextTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA70EBF6196B93F300F6F3E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Stephen Dunstan";
+			};
+			buildConfigurationList = AA70EBF9196B93F300F6F3E4 /* Build configuration list for PBXProject "SimpleText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA70EBF5196B93F300F6F3E4;
+			productRefGroup = AA70EBFF196B93F300F6F3E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA70EBFD196B93F300F6F3E4 /* SimpleText */,
+				AA70EC0D196B93F300F6F3E4 /* SimpleTextTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA70EC0C196B93F300F6F3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA70EC1C196B93F300F6F3E4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA70EBFA196B93F300F6F3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA70EC09196B93F300F6F3E4 /* SimpleText.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA70EC0A196B93F300F6F3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA70EC1E196B93F300F6F3E4 /* SimpleTextTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA70EC15196B93F300F6F3E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA70EBFD196B93F300F6F3E4 /* SimpleText */;
+			targetProxy = AA70EC14196B93F300F6F3E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA70EC1A196B93F300F6F3E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA70EC1B196B93F300F6F3E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA70EC1F196B93F300F6F3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA70EC20196B93F300F6F3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA70EC22196B93F300F6F3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SimpleText.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleText/SimpleText-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA70EC23196B93F300F6F3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SimpleText.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleText/SimpleText-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AA70EC25196B93F300F6F3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleText/SimpleText-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleTextTests/SimpleTextTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AA70EC26196B93F300F6F3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleText/SimpleText-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTextTests/SimpleTextTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA70EBF9196B93F300F6F3E4 /* Build configuration list for PBXProject "SimpleText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA70EC1F196B93F300F6F3E4 /* Debug */,
+				AA70EC20196B93F300F6F3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA70EC21196B93F300F6F3E4 /* Build configuration list for PBXNativeTarget "SimpleText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA70EC22196B93F300F6F3E4 /* Debug */,
+				AA70EC23196B93F300F6F3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA70EC24196B93F300F6F3E4 /* Build configuration list for PBXNativeTarget "SimpleTextTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA70EC25196B93F300F6F3E4 /* Debug */,
+				AA70EC26196B93F300F6F3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA70EBF6196B93F300F6F3E4 /* Project object */;
+}

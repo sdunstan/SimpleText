@@ -11,6 +11,6 @@
 
 @interface NSAttributedString (Builder)
 
-+ (instancetype) attributedStringWithBlock:(void (^) (AttributedStringBuilder *builder))callbackBlock;
++ (instancetype) attributedStringWithObject:(id)object block:(void (^) (AttributedStringBuilder *builder, id object))callbackBlock;
 
 @end

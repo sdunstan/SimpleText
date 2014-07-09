@@ -16,6 +16,7 @@
 -(AttributedStringBuilder*) right;
 -(AttributedStringBuilder*) bold;
 -(AttributedStringBuilder*) underline;
+-(AttributedStringBuilder*) link:(NSString*)href;
 -(AttributedStringBuilder*) text:(NSString*)fontFamily;
 
 -(NSAttributedString*)build;

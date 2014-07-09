@@ -1,18 +1,21 @@
 SimpleText
 ==========
 
-Objective-C builder for creating attributed text.
+Objective-C builder for creating attributed text strings.
 
 Sample usage:
 
-    NSAttributedText *doc =
-      [NSAttributedText attributedStringWithBlock:^(AttributedStringBuilder *builder) {
-        [builder withfontFamily: @"Helvetica"];
-        [builder center [bold [underline [text: @"A Time for Clowns\n"]]]];
-        [builder center                  [text: @"A Play in Two Acts\n\n"]];
+    NSAttributedString *doc =
+      [NSAttributedString
+        attributedStringWithObject:(id)object
+                             block:^(AttributedStringBuilder *builder)
+      {
+          [builder withfontFamily: @"Helvetica"];
+          [builder center [bold [underline [paragraph: obj.title]]]];
+          [builder center                  [text: @"A Play in Two Acts\n\n"]];
 
-        [builder center                  [text: @"GEORGE\n"]];
-        [builder                          text: @"I love you, Orange.\n"];
-        [builder center                  [text: @"ORANGE\n"]];
-        [builder                          text: @"I love you too, George.\n"];
+          [builder center [link:@"#GEORGE" [text: @"GEORGE\n"]]];
+          [builder                          text: @"I love you, Orange.\n"];
+          [builder center [link:@"#ORANGE" [text: @"ORANGE\n"]]];
+          [builder                          text: @"I love you too, George.\n"];
       }];

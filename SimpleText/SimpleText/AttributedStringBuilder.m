@@ -7,11 +7,15 @@
 //
 
 #import "AttributedStringBuilder.h"
+#import <CoreText/CoreText.h>
+#import <UIKit/UIKit.h>
 
 @implementation AttributedStringBuilder
 
 NSMutableArray *commandStack;
-NSMutableMap *attributesMap;
+NSMutableDictionary *attributesMap;
+UIFont *normalFont;
+UIFont *boldFont;
 
 -(id)init
 {
@@ -19,6 +23,10 @@ NSMutableMap *attributesMap;
     
     if (self) {
         commandStack = [[NSMutableArray alloc] init];
+        attributesMap = [[NSMutableDictionary alloc] init];
+        
+        normalFont = [UIFont systemFontOfSize:[UIFont systemFontSize]];
+        boldFont = [UIFont boldSystemFontOfSize:[UIFont systemFontSize]];
     }
     
     return self;
@@ -82,11 +90,13 @@ NSMutableMap *attributesMap;
 
 -(AttributedStringBuilder*) bold
 {
+    [attributesMap setObject: boldFont forKey:NSFontAttributeName];
     return self;
 }
 
 -(AttributedStringBuilder*) underline
 {
+    [attributesMap setObject: @(NSUnderlineStyleSingle) forKey:NSUnderlineStyleAttributeName];
     return self;
 }
 

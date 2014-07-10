@@ -10,12 +10,13 @@
 		AA70EC02196B93F300F6F3E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
 		AA70EC10196B93F300F6F3E4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC0F196B93F300F6F3E4 /* XCTest.framework */; };
 		AA70EC11196B93F300F6F3E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
-		AA70EC13196B93F300F6F3E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC12196B93F300F6F3E4 /* UIKit.framework */; };
 		AA70EC16196B93F300F6F3E4 /* libSimpleText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EBFE196B93F300F6F3E4 /* libSimpleText.a */; };
 		AA70EC1C196B93F300F6F3E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA70EC1A196B93F300F6F3E4 /* InfoPlist.strings */; };
 		AA70EC1E196B93F300F6F3E4 /* SimpleTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70EC1D196B93F300F6F3E4 /* SimpleTextTests.m */; };
 		AA70EC29196B962200F6F3E4 /* NSAttributedString+Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70EC28196B962200F6F3E4 /* NSAttributedString+Builder.m */; };
 		AA70EC2C196B968500F6F3E4 /* AttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70EC2B196B968500F6F3E4 /* AttributedStringBuilder.m */; };
+		AA70EC2E196E484100F6F3E4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC2D196E484100F6F3E4 /* CoreText.framework */; };
+		AA70EC30196E499200F6F3E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC2F196E499200F6F3E4 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,6 @@
 		AA70EC05196B93F300F6F3E4 /* SimpleText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleText-Prefix.pch"; sourceTree = "<group>"; };
 		AA70EC0E196B93F300F6F3E4 /* SimpleTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA70EC0F196B93F300F6F3E4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AA70EC12196B93F300F6F3E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		AA70EC19196B93F300F6F3E4 /* SimpleTextTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTextTests-Info.plist"; sourceTree = "<group>"; };
 		AA70EC1B196B93F300F6F3E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA70EC1D196B93F300F6F3E4 /* SimpleTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTextTests.m; sourceTree = "<group>"; };
@@ -54,6 +54,8 @@
 		AA70EC28196B962200F6F3E4 /* NSAttributedString+Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Builder.m"; sourceTree = "<group>"; };
 		AA70EC2A196B968500F6F3E4 /* AttributedStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStringBuilder.h; sourceTree = "<group>"; };
 		AA70EC2B196B968500F6F3E4 /* AttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStringBuilder.m; sourceTree = "<group>"; };
+		AA70EC2D196E484100F6F3E4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		AA70EC2F196E499200F6F3E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA70EC30196E499200F6F3E4 /* UIKit.framework in Frameworks */,
+				AA70EC2E196E484100F6F3E4 /* CoreText.framework in Frameworks */,
 				AA70EC02196B93F300F6F3E4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +75,6 @@
 			files = (
 				AA70EC16196B93F300F6F3E4 /* libSimpleText.a in Frameworks */,
 				AA70EC10196B93F300F6F3E4 /* XCTest.framework in Frameworks */,
-				AA70EC13196B93F300F6F3E4 /* UIKit.framework in Frameworks */,
 				AA70EC11196B93F300F6F3E4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,9 +104,10 @@
 		AA70EC00196B93F300F6F3E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA70EC2F196E499200F6F3E4 /* UIKit.framework */,
+				AA70EC2D196E484100F6F3E4 /* CoreText.framework */,
 				AA70EC01196B93F300F6F3E4 /* Foundation.framework */,
 				AA70EC0F196B93F300F6F3E4 /* XCTest.framework */,
-				AA70EC12196B93F300F6F3E4 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

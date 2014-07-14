@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "NSAttributedString+Builder.h"
+
 @interface SimpleTextTests : XCTestCase
 
 @end
@@ -26,9 +28,15 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testCenter
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    
+    NSAttributedString *doc = [NSAttributedString attributedStringWithObject:nil block:^(AttributedStringBuilder *builder, id object) {
+        [[builder center] text:@"This is neat"];
+    }];
+    
+    XCTAssertNotNil(doc, @"Doc should not be nil");
+    
 }
 
 @end

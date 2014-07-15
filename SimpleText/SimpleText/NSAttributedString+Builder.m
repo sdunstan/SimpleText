@@ -10,10 +10,10 @@
 
 @implementation NSAttributedString (Builder)
 
-+ (instancetype) attributedStringWithObject:(id)object block:(void (^) (AttributedStringBuilder *builder, id object))callbackBlock
++ (instancetype) attributedStringWithObject:(id)object block:(void (^) (STAttributedStringBuilder *builder, id object))callbackBlock
 {
     // Create a builder to use in the provided callback.
-    AttributedStringBuilder *builder = [[AttributedStringBuilder alloc] init];
+    STAttributedStringBuilder *builder = [[STAttributedStringBuilder alloc] init];
     
     // Execute the callback
     callbackBlock(builder, object);

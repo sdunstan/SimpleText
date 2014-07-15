@@ -6,16 +6,35 @@
 //  Copyright (c) 2014 Stephen Dunstan. All rights reserved.
 //
 
-#import "AttributedStringBuilder.h"
-#import <CoreText/CoreText.h>
-#import <UIKit/UIKit.h>
+/*
+ // Phrase level attributes
+ -(STAttributedStringBuilder*) bold;
+ -(STAttributedStringBuilder*) underline;
+ -(STAttributedStringBuilder*) italics;
+ 
+ // Writes the provided text to the buffer and clears phrase level settings
+ -(STAttributedStringBuilder*)write:(NSString*)string;
+ -(STAttributedStringBuilder*)write:(NSString*)string withLink:(NSString*)uri;
+ 
+ // Writes the provided text to the buffer and clears paragraph and phrase level settings
+ -(void)writeParagraph:(NSString*)string;
+ 
+ // Build the NSAttributedString
+ -(NSAttributedString*)build;
 
-@implementation AttributedStringBuilder
+ */
+
+
+#import "STAttributedStringBuilder.h"
+#import <CoreText/CoreText.h>
+
+@implementation STAttributedStringBuilder
 
 NSMutableArray *commandStack;
 NSMutableDictionary *attributesMap;
 UIFont *normalFont;
 UIFont *boldFont;
+UIFont *obliqueFont;
 
 -(id)init
 {
@@ -27,6 +46,7 @@ UIFont *boldFont;
         
         normalFont = [UIFont systemFontOfSize:[UIFont systemFontSize]];
         boldFont = [UIFont boldSystemFontOfSize:[UIFont systemFontSize]];
+        
     }
     
     return self;
@@ -54,9 +74,9 @@ UIFont *boldFont;
     [commandStack addObject:invocation];
 }
 
--(AttributedStringBuilder*) withFontFamily:(NSString*)fontFamily
+-(STAttributedStringBuilder*) fontFamily:(NSString*)fontFamilyName withSize:(CGFloat)size;
 {
-    [self pushCommandSelector:@selector(addFontFamily:) withArgument:fontFamily];
+    [self pushCommandSelector:@selector(addFontFamily:) withArgument:fontFamilyName];
     return self;
 }
 
@@ -65,7 +85,7 @@ UIFont *boldFont;
     // TODO: this is where the actual font will be applied to the NSAttributedString
 }
 
--(AttributedStringBuilder*) center
+-(STAttributedStringBuilder*) center
 {
     [self pushCommandSelector:@selector(_center)];
     return self;
@@ -78,35 +98,47 @@ UIFont *boldFont;
 //    centeredParagraphStyle.alignment = NSTextAlignmentCenter;
 }
 
--(AttributedStringBuilder*) left
+-(STAttributedStringBuilder*) left
 {
     return self;
 }
 
--(AttributedStringBuilder*) right
+-(STAttributedStringBuilder*) right
 {
     return self;
 }
 
--(AttributedStringBuilder*) bold
+-(STAttributedStringBuilder*) justified
+{
+    return self;
+}
+
+-(STAttributedStringBuilder*) bold
 {
     [attributesMap setObject: boldFont forKey:NSFontAttributeName];
     return self;
 }
 
--(AttributedStringBuilder*) underline
+-(STAttributedStringBuilder*) underline
 {
     [attributesMap setObject: @(NSUnderlineStyleSingle) forKey:NSUnderlineStyleAttributeName];
     return self;
 }
 
--(AttributedStringBuilder*) link:(NSString*)href
+-(STAttributedStringBuilder*) italics
+{
+    // TODO: only use the "obliqueness" attribute if there is no oblique version of the font.
+    [attributesMap setObject:@(9) forKey:NSObliquenessAttributeName];
+    return self;
+}
+
+-(STAttributedStringBuilder*) link:(NSString*)href
 {
     return self;
 }
 
 
--(AttributedStringBuilder*) text:(NSString*)fontFamily
+-(STAttributedStringBuilder*) text:(NSString*)fontFamily
 {
     return self;
 }

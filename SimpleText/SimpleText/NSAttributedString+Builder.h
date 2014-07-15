@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AttributedStringBuilder.h"
+#import "STAttributedStringBuilder.h"
 
 @interface NSAttributedString (Builder)
 
-+ (instancetype) attributedStringWithObject:(id)object block:(void (^) (AttributedStringBuilder *builder, id object))callbackBlock;
++ (instancetype) attributedStringWithObject:(id)object block:(void (^) (STAttributedStringBuilder *builder, id object))callbackBlock;
 
 @end

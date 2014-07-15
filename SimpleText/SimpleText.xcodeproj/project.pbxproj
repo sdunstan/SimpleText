@@ -14,7 +14,7 @@
 		AA70EC1C196B93F300F6F3E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA70EC1A196B93F300F6F3E4 /* InfoPlist.strings */; };
 		AA70EC1E196B93F300F6F3E4 /* SimpleTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70EC1D196B93F300F6F3E4 /* SimpleTextTests.m */; };
 		AA70EC29196B962200F6F3E4 /* NSAttributedString+Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70EC28196B962200F6F3E4 /* NSAttributedString+Builder.m */; };
-		AA70EC2C196B968500F6F3E4 /* AttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70EC2B196B968500F6F3E4 /* AttributedStringBuilder.m */; };
+		AA70EC2C196B968500F6F3E4 /* STAttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = AA70EC2B196B968500F6F3E4 /* STAttributedStringBuilder.m */; };
 		AA70EC2E196E484100F6F3E4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC2D196E484100F6F3E4 /* CoreText.framework */; };
 		AA70EC30196E499200F6F3E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC2F196E499200F6F3E4 /* UIKit.framework */; };
 /* End PBXBuildFile section */
@@ -52,8 +52,8 @@
 		AA70EC1D196B93F300F6F3E4 /* SimpleTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTextTests.m; sourceTree = "<group>"; };
 		AA70EC27196B962200F6F3E4 /* NSAttributedString+Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Builder.h"; sourceTree = "<group>"; };
 		AA70EC28196B962200F6F3E4 /* NSAttributedString+Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Builder.m"; sourceTree = "<group>"; };
-		AA70EC2A196B968500F6F3E4 /* AttributedStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStringBuilder.h; sourceTree = "<group>"; };
-		AA70EC2B196B968500F6F3E4 /* AttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStringBuilder.m; sourceTree = "<group>"; };
+		AA70EC2A196B968500F6F3E4 /* STAttributedStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAttributedStringBuilder.h; sourceTree = "<group>"; };
+		AA70EC2B196B968500F6F3E4 /* STAttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAttributedStringBuilder.m; sourceTree = "<group>"; };
 		AA70EC2D196E484100F6F3E4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		AA70EC2F196E499200F6F3E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -118,8 +118,8 @@
 				AA70EC04196B93F300F6F3E4 /* Supporting Files */,
 				AA70EC27196B962200F6F3E4 /* NSAttributedString+Builder.h */,
 				AA70EC28196B962200F6F3E4 /* NSAttributedString+Builder.m */,
-				AA70EC2A196B968500F6F3E4 /* AttributedStringBuilder.h */,
-				AA70EC2B196B968500F6F3E4 /* AttributedStringBuilder.m */,
+				AA70EC2A196B968500F6F3E4 /* STAttributedStringBuilder.h */,
+				AA70EC2B196B968500F6F3E4 /* STAttributedStringBuilder.m */,
 			);
 			path = SimpleText;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA70EC2C196B968500F6F3E4 /* AttributedStringBuilder.m in Sources */,
+				AA70EC2C196B968500F6F3E4 /* STAttributedStringBuilder.m in Sources */,
 				AA70EC29196B962200F6F3E4 /* NSAttributedString+Builder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

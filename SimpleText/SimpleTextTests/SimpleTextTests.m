@@ -31,7 +31,7 @@
 - (void)testCenter
 {
     
-    NSAttributedString *doc = [NSAttributedString attributedStringWithObject:nil block:^(AttributedStringBuilder *builder, id object) {
+    NSAttributedString *doc = [NSAttributedString attributedStringWithObject:nil block:^(STAttributedStringBuilder *builder, id object) {
         [[builder center] text:@"This is neat"];
     }];
     

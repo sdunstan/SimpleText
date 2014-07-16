@@ -138,9 +138,23 @@ UIFont *obliqueFont;
 }
 
 
--(STAttributedStringBuilder*) text:(NSString*)fontFamily
+// Writes the provided text to the buffer and clears phrase level settings
+-(STAttributedStringBuilder*)write:(NSString*)string
+{
+    
+    return self;
+    
+}
+
+-(STAttributedStringBuilder*)write:(NSString*)string withLink:(NSString*)uri
 {
     return self;
+}
+
+// Writes the provided text to the buffer and clears paragraph and phrase level settings
+-(void)writeParagraph:(NSString*)string
+{
+    
 }
 
 

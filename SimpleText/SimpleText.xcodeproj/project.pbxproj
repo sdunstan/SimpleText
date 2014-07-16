@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3B268700BB409AB5066837 /* libPods-SimpleTextTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F037A40A84441B8A5D6F78 /* libPods-SimpleTextTests.a */; };
+		AA25C5E21975ED6C0040B6FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
+		AA25C5E41975ED6C0040B6FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA25C5E31975ED6C0040B6FB /* CoreGraphics.framework */; };
+		AA25C5E51975ED6C0040B6FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC2F196E499200F6F3E4 /* UIKit.framework */; };
+		AA25C5EB1975ED6C0040B6FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA25C5E91975ED6C0040B6FB /* InfoPlist.strings */; };
+		AA25C5ED1975ED6D0040B6FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA25C5EC1975ED6D0040B6FB /* main.m */; };
+		AA25C5F11975ED6D0040B6FB /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA25C5F01975ED6D0040B6FB /* STAppDelegate.m */; };
+		AA25C5F41975ED6D0040B6FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA25C5F21975ED6D0040B6FB /* Main.storyboard */; };
+		AA25C5F71975ED6D0040B6FB /* STViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA25C5F61975ED6D0040B6FB /* STViewController.m */; };
+		AA25C5F91975ED6D0040B6FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA25C5F81975ED6D0040B6FB /* Images.xcassets */; };
+		AA25C5FF1975ED6D0040B6FB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC0F196B93F300F6F3E4 /* XCTest.framework */; };
+		AA25C6001975ED6D0040B6FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
+		AA25C6011975ED6D0040B6FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC2F196E499200F6F3E4 /* UIKit.framework */; };
+		AA25C6091975ED6D0040B6FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA25C6071975ED6D0040B6FB /* InfoPlist.strings */; };
+		AA25C60B1975ED6D0040B6FB /* SimpleTextAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA25C60A1975ED6D0040B6FB /* SimpleTextAppTests.m */; };
 		AA70EC02196B93F300F6F3E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
 		AA70EC10196B93F300F6F3E4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC0F196B93F300F6F3E4 /* XCTest.framework */; };
 		AA70EC11196B93F300F6F3E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
@@ -20,6 +35,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		AA25C6021975ED6D0040B6FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA70EBF6196B93F300F6F3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA25C5E01975ED6C0040B6FB;
+			remoteInfo = SimpleTextApp;
+		};
 		AA70EC14196B93F300F6F3E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AA70EBF6196B93F300F6F3E4 /* Project object */;
@@ -42,6 +64,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA25C5E11975ED6C0040B6FB /* SimpleTextApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTextApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA25C5E31975ED6C0040B6FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA25C5E81975ED6C0040B6FB /* SimpleTextApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTextApp-Info.plist"; sourceTree = "<group>"; };
+		AA25C5EA1975ED6C0040B6FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA25C5EC1975ED6D0040B6FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA25C5EE1975ED6D0040B6FB /* SimpleTextApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleTextApp-Prefix.pch"; sourceTree = "<group>"; };
+		AA25C5EF1975ED6D0040B6FB /* STAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
+		AA25C5F01975ED6D0040B6FB /* STAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STAppDelegate.m; sourceTree = "<group>"; };
+		AA25C5F31975ED6D0040B6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA25C5F51975ED6D0040B6FB /* STViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STViewController.h; sourceTree = "<group>"; };
+		AA25C5F61975ED6D0040B6FB /* STViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STViewController.m; sourceTree = "<group>"; };
+		AA25C5F81975ED6D0040B6FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA25C5FE1975ED6D0040B6FB /* SimpleTextAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTextAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA25C6061975ED6D0040B6FB /* SimpleTextAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTextAppTests-Info.plist"; sourceTree = "<group>"; };
+		AA25C6081975ED6D0040B6FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA25C60A1975ED6D0040B6FB /* SimpleTextAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTextAppTests.m; sourceTree = "<group>"; };
 		AA70EBFE196B93F300F6F3E4 /* libSimpleText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSimpleText.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA70EC01196B93F300F6F3E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA70EC05196B93F300F6F3E4 /* SimpleText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleText-Prefix.pch"; sourceTree = "<group>"; };
@@ -56,9 +94,31 @@
 		AA70EC2B196B968500F6F3E4 /* STAttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAttributedStringBuilder.m; sourceTree = "<group>"; };
 		AA70EC2D196E484100F6F3E4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		AA70EC2F196E499200F6F3E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C4F037A40A84441B8A5D6F78 /* libPods-SimpleTextTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimpleTextTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6F613205529436C959656EE /* Pods-SimpleTextTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTextTests.xcconfig"; path = "Pods/Pods-SimpleTextTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AA25C5DE1975ED6C0040B6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA25C5E41975ED6C0040B6FB /* CoreGraphics.framework in Frameworks */,
+				AA25C5E51975ED6C0040B6FB /* UIKit.framework in Frameworks */,
+				AA25C5E21975ED6C0040B6FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA25C5FB1975ED6D0040B6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA25C5FF1975ED6D0040B6FB /* XCTest.framework in Frameworks */,
+				AA25C6011975ED6D0040B6FB /* UIKit.framework in Frameworks */,
+				AA25C6001975ED6D0040B6FB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA70EBFB196B93F300F6F3E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,19 +136,66 @@
 				AA70EC16196B93F300F6F3E4 /* libSimpleText.a in Frameworks */,
 				AA70EC10196B93F300F6F3E4 /* XCTest.framework in Frameworks */,
 				AA70EC11196B93F300F6F3E4 /* Foundation.framework in Frameworks */,
+				1D3B268700BB409AB5066837 /* libPods-SimpleTextTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA25C5E61975ED6C0040B6FB /* SimpleTextApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA25C5EF1975ED6D0040B6FB /* STAppDelegate.h */,
+				AA25C5F01975ED6D0040B6FB /* STAppDelegate.m */,
+				AA25C5F21975ED6D0040B6FB /* Main.storyboard */,
+				AA25C5F51975ED6D0040B6FB /* STViewController.h */,
+				AA25C5F61975ED6D0040B6FB /* STViewController.m */,
+				AA25C5F81975ED6D0040B6FB /* Images.xcassets */,
+				AA25C5E71975ED6C0040B6FB /* Supporting Files */,
+			);
+			path = SimpleTextApp;
+			sourceTree = "<group>";
+		};
+		AA25C5E71975ED6C0040B6FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA25C5E81975ED6C0040B6FB /* SimpleTextApp-Info.plist */,
+				AA25C5E91975ED6C0040B6FB /* InfoPlist.strings */,
+				AA25C5EC1975ED6D0040B6FB /* main.m */,
+				AA25C5EE1975ED6D0040B6FB /* SimpleTextApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA25C6041975ED6D0040B6FB /* SimpleTextAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA25C60A1975ED6D0040B6FB /* SimpleTextAppTests.m */,
+				AA25C6051975ED6D0040B6FB /* Supporting Files */,
+			);
+			path = SimpleTextAppTests;
+			sourceTree = "<group>";
+		};
+		AA25C6051975ED6D0040B6FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA25C6061975ED6D0040B6FB /* SimpleTextAppTests-Info.plist */,
+				AA25C6071975ED6D0040B6FB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		AA70EBF5196B93F300F6F3E4 = {
 			isa = PBXGroup;
 			children = (
 				AA70EC03196B93F300F6F3E4 /* SimpleText */,
 				AA70EC17196B93F300F6F3E4 /* SimpleTextTests */,
+				AA25C5E61975ED6C0040B6FB /* SimpleTextApp */,
+				AA25C6041975ED6D0040B6FB /* SimpleTextAppTests */,
 				AA70EC00196B93F300F6F3E4 /* Frameworks */,
 				AA70EBFF196B93F300F6F3E4 /* Products */,
+				F6F613205529436C959656EE /* Pods-SimpleTextTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +204,8 @@
 			children = (
 				AA70EBFE196B93F300F6F3E4 /* libSimpleText.a */,
 				AA70EC0E196B93F300F6F3E4 /* SimpleTextTests.xctest */,
+				AA25C5E11975ED6C0040B6FB /* SimpleTextApp.app */,
+				AA25C5FE1975ED6D0040B6FB /* SimpleTextAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +217,8 @@
 				AA70EC2D196E484100F6F3E4 /* CoreText.framework */,
 				AA70EC01196B93F300F6F3E4 /* Foundation.framework */,
 				AA70EC0F196B93F300F6F3E4 /* XCTest.framework */,
+				C4F037A40A84441B8A5D6F78 /* libPods-SimpleTextTests.a */,
+				AA25C5E31975ED6C0040B6FB /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +264,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AA25C5E01975ED6C0040B6FB /* SimpleTextApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA25C60C1975ED6D0040B6FB /* Build configuration list for PBXNativeTarget "SimpleTextApp" */;
+			buildPhases = (
+				AA25C5DD1975ED6C0040B6FB /* Sources */,
+				AA25C5DE1975ED6C0040B6FB /* Frameworks */,
+				AA25C5DF1975ED6C0040B6FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleTextApp;
+			productName = SimpleTextApp;
+			productReference = AA25C5E11975ED6C0040B6FB /* SimpleTextApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA25C5FD1975ED6D0040B6FB /* SimpleTextAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA25C60F1975ED6D0040B6FB /* Build configuration list for PBXNativeTarget "SimpleTextAppTests" */;
+			buildPhases = (
+				AA25C5FA1975ED6D0040B6FB /* Sources */,
+				AA25C5FB1975ED6D0040B6FB /* Frameworks */,
+				AA25C5FC1975ED6D0040B6FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA25C6031975ED6D0040B6FB /* PBXTargetDependency */,
+			);
+			name = SimpleTextAppTests;
+			productName = SimpleTextAppTests;
+			productReference = AA25C5FE1975ED6D0040B6FB /* SimpleTextAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		AA70EBFD196B93F300F6F3E4 /* SimpleText */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA70EC21196B93F300F6F3E4 /* Build configuration list for PBXNativeTarget "SimpleText" */;
@@ -174,9 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA70EC24196B93F300F6F3E4 /* Build configuration list for PBXNativeTarget "SimpleTextTests" */;
 			buildPhases = (
+				0E10849DB4BE4DC5B0813C41 /* Check Pods Manifest.lock */,
 				AA70EC0A196B93F300F6F3E4 /* Sources */,
 				AA70EC0B196B93F300F6F3E4 /* Frameworks */,
 				AA70EC0C196B93F300F6F3E4 /* Resources */,
+				6388A6792A67490EAA2ABD9E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +344,14 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Stephen Dunstan";
+				TargetAttributes = {
+					AA25C5FD1975ED6D0040B6FB = {
+						TestTargetID = AA25C5E01975ED6C0040B6FB;
+					};
+					AA70EC0D196B93F300F6F3E4 = {
+						TestTargetID = AA25C5E01975ED6C0040B6FB;
+					};
+				};
 			};
 			buildConfigurationList = AA70EBF9196B93F300F6F3E4 /* Build configuration list for PBXProject "SimpleText" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -203,6 +359,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = AA70EBF5196B93F300F6F3E4;
 			productRefGroup = AA70EBFF196B93F300F6F3E4 /* Products */;
@@ -211,11 +368,31 @@
 			targets = (
 				AA70EBFD196B93F300F6F3E4 /* SimpleText */,
 				AA70EC0D196B93F300F6F3E4 /* SimpleTextTests */,
+				AA25C5E01975ED6C0040B6FB /* SimpleTextApp */,
+				AA25C5FD1975ED6D0040B6FB /* SimpleTextAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AA25C5DF1975ED6C0040B6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA25C5F91975ED6D0040B6FB /* Images.xcassets in Resources */,
+				AA25C5EB1975ED6C0040B6FB /* InfoPlist.strings in Resources */,
+				AA25C5F41975ED6D0040B6FB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA25C5FC1975ED6D0040B6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA25C6091975ED6D0040B6FB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA70EC0C196B93F300F6F3E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -226,7 +403,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E10849DB4BE4DC5B0813C41 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6388A6792A67490EAA2ABD9E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SimpleTextTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		AA25C5DD1975ED6C0040B6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA25C5F71975ED6D0040B6FB /* STViewController.m in Sources */,
+				AA25C5ED1975ED6D0040B6FB /* main.m in Sources */,
+				AA25C5F11975ED6D0040B6FB /* STAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA25C5FA1975ED6D0040B6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA25C60B1975ED6D0040B6FB /* SimpleTextAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA70EBFA196B93F300F6F3E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,6 +475,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		AA25C6031975ED6D0040B6FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA25C5E01975ED6C0040B6FB /* SimpleTextApp */;
+			targetProxy = AA25C6021975ED6D0040B6FB /* PBXContainerItemProxy */;
+		};
 		AA70EC15196B93F300F6F3E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AA70EBFD196B93F300F6F3E4 /* SimpleText */;
@@ -255,6 +488,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AA25C5E91975ED6C0040B6FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA25C5EA1975ED6C0040B6FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AA25C5F21975ED6D0040B6FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA25C5F31975ED6D0040B6FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA25C6071975ED6D0040B6FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA25C6081975ED6D0040B6FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		AA70EC1A196B93F300F6F3E4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -266,6 +523,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AA25C60D1975ED6D0040B6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTextApp/SimpleTextApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleTextApp/SimpleTextApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA25C60E1975ED6D0040B6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTextApp/SimpleTextApp-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTextApp/SimpleTextApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AA25C6101975ED6D0040B6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleTextApp.app/SimpleTextApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTextApp/SimpleTextApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SimpleTextAppTests/SimpleTextAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AA25C6111975ED6D0040B6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleTextApp.app/SimpleTextApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleTextApp/SimpleTextApp-Prefix.pch";
+				INFOPLIST_FILE = "SimpleTextAppTests/SimpleTextAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		AA70EC1F196B93F300F6F3E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -360,7 +689,9 @@
 		};
 		AA70EC25196B93F300F6F3E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F613205529436C959656EE /* Pods-SimpleTextTests.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleTextApp.app/SimpleTextApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -374,13 +705,16 @@
 				);
 				INFOPLIST_FILE = "SimpleTextTests/SimpleTextTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		AA70EC26196B93F300F6F3E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F613205529436C959656EE /* Pods-SimpleTextTests.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SimpleTextApp.app/SimpleTextApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -390,6 +724,7 @@
 				GCC_PREFIX_HEADER = "SimpleText/SimpleText-Prefix.pch";
 				INFOPLIST_FILE = "SimpleTextTests/SimpleTextTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -397,6 +732,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA25C60C1975ED6D0040B6FB /* Build configuration list for PBXNativeTarget "SimpleTextApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA25C60D1975ED6D0040B6FB /* Debug */,
+				AA25C60E1975ED6D0040B6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA25C60F1975ED6D0040B6FB /* Build configuration list for PBXNativeTarget "SimpleTextAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA25C6101975ED6D0040B6FB /* Debug */,
+				AA25C6111975ED6D0040B6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AA70EBF9196B93F300F6F3E4 /* Build configuration list for PBXProject "SimpleText" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -413,6 +764,7 @@
 				AA70EC23196B93F300F6F3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA70EC24196B93F300F6F3E4 /* Build configuration list for PBXNativeTarget "SimpleTextTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +773,7 @@
 				AA70EC26196B93F300F6F3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

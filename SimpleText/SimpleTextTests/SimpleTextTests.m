@@ -31,8 +31,8 @@
 - (void)testCenter
 {
     
-    NSAttributedString *doc = [NSAttributedString attributedStringWithObject:nil block:^(STAttributedStringBuilder *builder, id object) {
-        [[builder center] text:@"This is neat"];
+    NSAttributedString *doc = [NSAttributedString st_attributedStringWithBuilderHandler:^(STAttributedStringBuilder *builder) {
+        [[builder center] writeParagraph:@"This is neat"];
     }];
     
     XCTAssertNotNil(doc, @"Doc should not be nil");

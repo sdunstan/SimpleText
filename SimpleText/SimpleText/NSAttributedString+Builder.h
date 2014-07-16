@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "STAttributedStringBuilder.h"
 
-@interface NSAttributedString (Builder)
+@interface NSAttributedString (STSimpleText)
 
-+ (instancetype) attributedStringWithObject:(id)object block:(void (^) (STAttributedStringBuilder *builder, id object))callbackBlock;
++(instancetype) st_attributedStringWithObject:(id)object builderHandler:(void (^) (STAttributedStringBuilder *builder, id object)) builderBlock;
++(instancetype) st_attributedStringWithBuilderHandler:(void (^) (STAttributedStringBuilder *builder)) builderBlock;
 
 @end

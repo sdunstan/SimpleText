@@ -8,18 +8,32 @@
 
 #import "NSAttributedString+Builder.h"
 
-@implementation NSAttributedString (Builder)
+@implementation NSAttributedString (STSimpleText)
 
-+ (instancetype) attributedStringWithObject:(id)object block:(void (^) (STAttributedStringBuilder *builder, id object))callbackBlock
++(instancetype) st_attributedStringWithObject:(id)object builderHandler:(void (^) (STAttributedStringBuilder *builder, id object)) builderBlock
 {
     // Create a builder to use in the provided callback.
     STAttributedStringBuilder *builder = [[STAttributedStringBuilder alloc] init];
     
     // Execute the callback
-    callbackBlock(builder, object);
+    builderBlock(builder, object);
+    
+    // return the results of the builder!
+    return [builder build];
+    
+}
+
++(instancetype) st_attributedStringWithBuilderHandler:(void (^) (STAttributedStringBuilder *builder)) builderBlock
+{
+    // Create a builder to use in the provided callback.
+    STAttributedStringBuilder *builder = [[STAttributedStringBuilder alloc] init];
+    
+    // Execute the callback
+    builderBlock(builder);
     
     // return the results of the builder!
     return [builder build];
 }
+
 
 @end

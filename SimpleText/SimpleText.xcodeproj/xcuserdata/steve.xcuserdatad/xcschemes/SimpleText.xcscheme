@@ -38,7 +38,26 @@
                ReferencedContainer = "container:SimpleText.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AA25C5FD1975ED6D0040B6FB"
+               BuildableName = "SimpleTextAppTests.xctest"
+               BlueprintName = "SimpleTextAppTests"
+               ReferencedContainer = "container:SimpleText.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AA25C5E01975ED6C0040B6FB"
+            BuildableName = "SimpleTextApp.app"
+            BlueprintName = "SimpleTextApp"
+            ReferencedContainer = "container:SimpleText.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -49,6 +68,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "AA25C5E01975ED6C0040B6FB"
+            BuildableName = "SimpleTextApp.app"
+            BlueprintName = "SimpleTextApp"
+            ReferencedContainer = "container:SimpleText.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

@@ -8,6 +8,8 @@
 
 #import "STViewController.h"
 
+#import "NSAttributedString+Builder.h"
+
 @interface STViewController ()
 
 @end
@@ -17,7 +19,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    NSAttributedString *doc = [[NSAttributedString alloc] initWithString:@"This is neat"];
+//    NSAttributedString *doc = [NSAttributedString st_attributedStringWithBuilderHandler:^(STAttributedStringBuilder *builder) {
+//        [[builder center] writeParagraph:@"012"];
+//        [[[builder bold] write:@"456"] writeParagraph:@"789"];
+//        [[[builder bold] italics] writeParagraph:@"YES!"];
+//    }];
+    
+    [self.textView setAttributedText:doc];
 }
 
 - (void)didReceiveMemoryWarning

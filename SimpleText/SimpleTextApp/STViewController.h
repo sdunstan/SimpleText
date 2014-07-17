@@ -10,4 +10,6 @@
 
 @interface STViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+
 @end

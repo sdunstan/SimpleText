@@ -17,6 +17,7 @@
 		AA25C5F41975ED6D0040B6FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA25C5F21975ED6D0040B6FB /* Main.storyboard */; };
 		AA25C5F71975ED6D0040B6FB /* STViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA25C5F61975ED6D0040B6FB /* STViewController.m */; };
 		AA25C5F91975ED6D0040B6FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA25C5F81975ED6D0040B6FB /* Images.xcassets */; };
+		AA4DBA84197862AD00785583 /* libSimpleText.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA70EBFE196B93F300F6F3E4 /* libSimpleText.a */; };
 		AA70EC02196B93F300F6F3E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
 		AA70EC10196B93F300F6F3E4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC0F196B93F300F6F3E4 /* XCTest.framework */; };
 		AA70EC11196B93F300F6F3E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA70EC01196B93F300F6F3E4 /* Foundation.framework */; };
@@ -48,6 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AA4DBA831978628D00785583 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA4DBA84197862AD00785583 /* libSimpleText.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AA70EBFC196B93F300F6F3E4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,10 +106,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAFD213E1977578000F260C1 /* libSimpleText.a in Frameworks */,
 				AA25C5E41975ED6C0040B6FB /* CoreGraphics.framework in Frameworks */,
 				AA25C5E51975ED6C0040B6FB /* UIKit.framework in Frameworks */,
 				AA25C5E21975ED6C0040B6FB /* Foundation.framework in Frameworks */,
+				AAFD213E1977578000F260C1 /* libSimpleText.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +245,7 @@
 				AA25C5DD1975ED6C0040B6FB /* Sources */,
 				AA25C5DE1975ED6C0040B6FB /* Frameworks */,
 				AA25C5DF1975ED6C0040B6FB /* Resources */,
+				AA4DBA831978628D00785583 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -454,6 +466,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "SimpleTextApp/SimpleTextApp-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -468,6 +481,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleTextApp/SimpleTextApp-Prefix.pch";
 				INFOPLIST_FILE = "SimpleTextApp/SimpleTextApp-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

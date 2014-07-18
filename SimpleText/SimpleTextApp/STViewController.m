@@ -20,12 +20,11 @@
 {
     [super viewDidLoad];
 
-    NSAttributedString *doc = [[NSAttributedString alloc] initWithString:@"This is neat"];
-//    NSAttributedString *doc = [NSAttributedString st_attributedStringWithBuilderHandler:^(STAttributedStringBuilder *builder) {
-//        [[builder center] writeParagraph:@"012"];
-//        [[[builder bold] write:@"456"] writeParagraph:@"789"];
-//        [[[builder bold] italics] writeParagraph:@"YES!"];
-//    }];
+    NSAttributedString *doc = [NSAttributedString st_attributedStringWithBuilderHandler:^(STAttributedStringBuilder *builder) {
+        [[builder center] writeParagraph:@"012"];
+        [[[builder bold] write:@"456"] writeParagraph:@"789"];
+        [[[builder bold] italics] writeParagraph:@"YES!"];
+    }];
     
     [self.textView setAttributedText:doc];
 }

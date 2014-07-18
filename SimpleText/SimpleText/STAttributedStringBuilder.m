@@ -146,7 +146,7 @@ UIFont *obliqueFont;
 -(STAttributedStringBuilder*) italics
 {
     // TODO: only use the "obliqueness" attribute if there is no oblique version of the font.
-    [attributesMap setObject:@(9) forKey:NSObliquenessAttributeName];
+    [attributesMap setObject:@(0.25) forKey:NSObliquenessAttributeName];
     return self;
 }
 

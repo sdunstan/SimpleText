@@ -89,46 +89,59 @@ UIFont *obliqueFont;
 
 -(STAttributedStringBuilder*) center
 {
-    // [self pushCommandSelector:@selector(_center)];
-    NSMutableParagraphStyle *centeredParagraphStyle = [[NSMutableParagraphStyle alloc]init];
-    centeredParagraphStyle.alignment = NSTextAlignmentCenter;
-    [attributesMap setObject:centeredParagraphStyle forKey:NSParagraphStyleAttributeName];
+    [self setParagraphStyleWithBlock:^(NSMutableParagraphStyle *paragraphStyle) {
+        paragraphStyle.alignment = NSTextAlignmentCenter;
+    }];
 
     return self;
 }
 
-//-(void) _center
-//{
-//    NSMutableParagraphStyle *centeredParagraphStyle = [[NSMutableParagraphStyle alloc]init];
-//    centeredParagraphStyle.alignment = NSTextAlignmentCenter;
-//    [attributesMap setObject:centeredParagraphStyle forKey:NSParagraphStyleAttributeName];
-//}
-
 -(STAttributedStringBuilder*) left
 {
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-    paragraphStyle.alignment = NSTextAlignmentLeft;
-    [attributesMap setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
+    [self setParagraphStyleWithBlock:^(NSMutableParagraphStyle *paragraphStyle) {
+        paragraphStyle.alignment = NSTextAlignmentLeft;
+    }];
     
     return self;
 }
 
 -(STAttributedStringBuilder*) right
 {
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-    paragraphStyle.alignment = NSTextAlignmentRight;
-    [attributesMap setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
+    [self setParagraphStyleWithBlock:^(NSMutableParagraphStyle *paragraphStyle) {
+        paragraphStyle.alignment = NSTextAlignmentRight;
+    }];
     
     return self;
 }
 
 -(STAttributedStringBuilder*) justified
 {
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-    paragraphStyle.alignment = NSTextAlignmentJustified;
-    [attributesMap setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
+    [self setParagraphStyleWithBlock:^(NSMutableParagraphStyle *paragraphStyle) {
+        paragraphStyle.alignment = NSTextAlignmentJustified;
+    }];
     
     return self;
+}
+
+-(STAttributedStringBuilder*) paragraphSpacingMultiplier:(CGFloat)spacing
+{
+    [self setParagraphStyleWithBlock:^(NSMutableParagraphStyle *paragraphStyle) {
+        paragraphStyle.paragraphSpacing = [normalFont lineHeight] * spacing;
+    }];
+    return self;
+}
+
+
+-(void) setParagraphStyleWithBlock:(void (^) (NSMutableParagraphStyle *paragraphStyle)) paragraphStyleBlock
+{
+    NSMutableParagraphStyle *paragraphStyle = [attributesMap objectForKey:NSParagraphStyleAttributeName];
+    if (paragraphStyle == nil)
+    {
+        paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+        [attributesMap setObject:paragraphStyle forKey:NSParagraphStyleAttributeName];
+    }
+    
+    paragraphStyleBlock(paragraphStyle);
 }
 
 -(STAttributedStringBuilder*) bold
@@ -150,12 +163,6 @@ UIFont *obliqueFont;
     return self;
 }
 
--(STAttributedStringBuilder*) link:(NSString*)href
-{
-    return self;
-}
-
-
 // Writes the provided text to the buffer and clears phrase level settings
 -(STAttributedStringBuilder*)write:(NSString*)string
 {
@@ -164,11 +171,14 @@ UIFont *obliqueFont;
     [attributesMap removeObjectForKey:NSUnderlineStyleAttributeName];
     [attributesMap removeObjectForKey:NSObliquenessAttributeName];
     return self;
-    
 }
 
 -(STAttributedStringBuilder*)write:(NSString*)string withLink:(NSString*)uri
 {
+    [attributesMap setObject:[NSURL URLWithString:uri] forKey:NSLinkAttributeName];
+    [self write:string];
+    [attributesMap removeObjectForKey:NSLinkAttributeName];
+    
     return self;
 }
 

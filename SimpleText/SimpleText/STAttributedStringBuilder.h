@@ -20,6 +20,7 @@
 -(STAttributedStringBuilder*) center;
 -(STAttributedStringBuilder*) right;
 -(STAttributedStringBuilder*) justified;
+-(STAttributedStringBuilder*) paragraphSpacingMultiplier:(CGFloat)spacing;
 
 // Phrase level attributes
 -(STAttributedStringBuilder*) bold;

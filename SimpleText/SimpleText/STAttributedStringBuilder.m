@@ -30,7 +30,6 @@
 
 @implementation STAttributedStringBuilder
 
-//NSMutableArray *commandStack;
 NSMutableDictionary *attributesMap;
 NSMutableAttributedString *doc;
 UIFont *normalFont;
@@ -42,7 +41,6 @@ UIFont *obliqueFont;
     self = [super init];
     
     if (self) {
-//        commandStack = [[NSMutableArray alloc] init];
         attributesMap = [[NSMutableDictionary alloc] init];
         
         normalFont = [UIFont systemFontOfSize:[UIFont systemFontSize]];
@@ -54,38 +52,10 @@ UIFont *obliqueFont;
     return self;
 }
 
-//-(void)pushCommandSelector:(SEL)selector withArgument:(id)arg
-//{
-//    NSMethodSignature *sig = [self methodSignatureForSelector:selector];
-//    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:sig];
-//    [invocation setTarget:self];
-//    [invocation setSelector:selector];
-//    [invocation setArgument:&arg atIndex:2];
-//    [invocation retainArguments];
-//    
-//    [commandStack addObject:invocation];
-//}
-//
-//-(void)pushCommandSelector:(SEL)selector
-//{
-//    NSMethodSignature *sig = [self methodSignatureForSelector:selector];
-//    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:sig];
-//    [invocation setTarget:self];
-//    [invocation setSelector:selector];
-//    
-//    [commandStack addObject:invocation];
-//}
-
 -(STAttributedStringBuilder*) fontFamily:(NSString*)fontFamilyName withSize:(CGFloat)size;
 {
-//    [self pushCommandSelector:@selector(_addFontFamily:) withArgument:fontFamilyName];
     return self;
 }
-
-//-(void) _addFontFamily:(NSString*)fontFamily
-//{
-//    // TODO: this is where the actual font will be applied to the NSAttributedString
-//}
 
 -(STAttributedStringBuilder*) center
 {
@@ -194,11 +164,6 @@ UIFont *obliqueFont;
 
 -(NSAttributedString*)build
 {
-//    for(NSInvocation *invocation in commandStack)
-//    {
-//        [invocation invoke];
-//    }
-    
     return [[NSAttributedString alloc] initWithAttributedString:doc];
 }
 
